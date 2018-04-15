@@ -10,17 +10,25 @@
   <body>
 
     <header class="navigation">
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>O nas</li>
-          <li>Galeria prac</li>
-          <li>Kontakt</li>
-        </ul>
-      </nav>
+      <div class="section_wrapper section_wrapper--navigation">
+        <h1 class="navigation_logo">
+          <span class="logo_txt--big">Zakład Tapicerski</span>
+          <span class="logo_txt--small">Arkadiusz Perzanowski</span>
+        </h1>
+        <nav>
+          <ul class="navigation_list">
+            <li class="navigation_list_el"><a href="#asdasasdasd">Home</a></li>
+            <li class="navigation_list_el"><a href="#asdasasdasd">O nas</a></li>
+            <li class="navigation_list_el"><a href="#asdasasdasd">Galeria prac</a></li>
+            <li class="navigation_list_el"><a href="#asdasasdasd">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
 
   </body>
   <script src="dist/scripts.all.min"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+
 </html>

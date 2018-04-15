@@ -72,27 +72,10 @@
 		align-items: center;
 		a:hover {
 			opacity: 1;
-			color: #333333;
+			color: pink;
 		}
 	}
-	.navigation_list_el {
-		position: relative;
-	}
 	.navigation_list_el:not(:last-of-type) {margin-right: 32px;}
-
-	.navigation_list_el::after {
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		bottom: -8px;
-		left: 0;
-		background-color: $orange;
-		transition: all 0.3s ease-in-out;
-	}
-	.navigation_list_el:not(:hover)::after {
-		transform: scaleX(0);
-	}
 
 
 	//after scrolling down desktop menu settings
