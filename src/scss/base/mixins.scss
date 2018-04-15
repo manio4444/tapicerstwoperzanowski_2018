@@ -1,0 +1,29 @@
+@mixin placeholder {
+  &::-webkit-input-placeholder { @content }
+  &::-moz-placeholder { @content }
+  &:-ms-input-placeholder { @content }
+  &:-moz-placeholder { @content }
+  &:placeholder-shown { @content }
+  &::placeholder { @content }
+}
+
+@mixin selection($czcionka, $tlo){
+  /* WebKit/Blink Browsers */
+  ::selection {
+    background: $tlo;
+    color:$czcionka;
+  }
+  /* Gecko Browsers */
+  ::-moz-selection {
+    background: $tlo;
+    color:$czcionka;
+  }
+}
+
+@mixin absolute {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

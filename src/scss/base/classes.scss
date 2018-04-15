@@ -1,0 +1,104 @@
+.section_wrapper {
+	padding-top: 50px;
+	padding-bottom: 60px;
+}
+
+#backtotop {
+	position: fixed;
+	bottom:30px;
+	right:30px;
+	height:70px;
+	width:70px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 4px -1px rgba(0, 0, 0, 0.66);
+	transition: all .3s ease;
+	cursor:pointer;
+	background-color: $orange;
+	z-index: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	visibility: hidden;
+	&:hover{ opacity:.7; }
+	&::after {
+		color: $white;
+		font-family: $awesome;
+		content: '\f106';
+		font-size: 36px;
+	}
+	&.visible {
+		opacity: 1;
+		visibility: visible;
+	}
+	&:not(.visible) {
+		pointer-events: none;
+	}
+@media (max-width: 1023px) {
+	height:36px;
+	width:36px;
+	right: 20px;
+	&::after {
+		font-size: 24px;
+	}
+}
+} //#backtotop
+
+.slick-slider {
+	.slick-arrow {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: 0;
+		font-weight: normal;
+		// color: inherit;
+		z-index: 1; //because left arrow is covered by slider
+		// &:hover {opacity: 1;}
+		&::after {
+			font-family: $awesome;
+			font-size: 40px;
+		}
+	}
+	.slick-prev::after {content: '\f104';}
+	.slick-next::after {content: '\f105';}
+
+	.slick-prev {left: 5px;}
+	.slick-next {right: 5px;}
+
+@media (max-width: 767px) {
+
+} //media
+@media (max-width: 1023px) {} //media
+@media (min-width: 1024px) {} //media
+@media (min-width: 1400px) {
+	.slick-prev {left: 30px;}
+	.slick-next {right: 30px;}
+} //media
+} //.slick-slider
+
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	li {
+		font-size: 0;
+		margin: 0 3px;
+		&::after {
+			content: '';
+			background-color: transparent;
+			border: 1px solid $white;
+			border-radius: 50%;
+			width: 8px;
+			height: 8px;
+			display: block;
+		}
+		&.slick-active {
+			&::after {
+				background-color: $white;
+			}
+		}
+		&:not(:last-child) {
+			// margin-right: 15px;
+		}
+	}
+}

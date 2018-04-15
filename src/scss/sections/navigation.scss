@@ -1,0 +1,115 @@
+.navigation {
+	z-index: 3;
+	position: fixed; //to be on top
+	background-color: $white;
+	width: 100%;
+	.section_wrapper--navigation {
+		display:  flex;
+		justify-content: space-between;
+		align-items: center;
+		height: $menu_height;
+		transition: height .5s ease;
+	}
+	.navigation_logo {
+	}
+
+@media (max-width: 1023px) {
+	box-shadow: 0 0 5px rgba(0,0,0,.5);
+	.hamburger {
+		outline: none;
+	}
+	.hamburger.is-active {
+	}
+	.hamburger:not(.is-active) {
+		.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+			background-color: $color1;
+		}
+	}
+	.navigation_list {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100vh;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-color: $orange;
+		color: $white;
+		font-weight: normal;
+		font-size: 30px;
+		opacity: 0;
+		transition: opacity .2s linear, height .2s ease;
+	}
+	.navigation_list_el {
+		transition: transform .2s ease;
+		transition-delay: .3s;
+		position: relative;
+	}
+	.navigation_list_el:not(:last-of-type) {
+		margin-bottom: 25px;
+	}
+	.navigation_list:not(.show) {
+		pointer-events: none;
+		.navigation_list_el:nth-child(odd) {transform: translateX(-100vw);}
+		.navigation_list_el:nth-child(even) {transform: translateX(100vw);}
+	}
+	.navigation_list.show {
+		opacity: 1;
+	}
+} //media
+@media (min-width: 1024px) {
+	.hamburger {display: none;}
+
+	.navigation_list {
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: 600;
+		transition: all .2s linear;
+		display: flex;
+		align-items: center;
+		a:hover {
+			opacity: 1;
+			color: #333333;
+		}
+	}
+	.navigation_list_el {
+		position: relative;
+	}
+	.navigation_list_el:not(:last-of-type) {margin-right: 32px;}
+
+	.navigation_list_el::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: -8px;
+		left: 0;
+		background-color: $orange;
+		transition: all 0.3s ease-in-out;
+	}
+	.navigation_list_el:not(:hover)::after {
+		transform: scaleX(0);
+	}
+
+
+	//after scrolling down desktop menu settings
+	.navigation_top,
+	// .navigation_top_logo img {transition: all .24s ease;}
+	&.scrolled {
+		box-shadow: 0 0 5px rgba(0,0,0,.5);
+		.section_wrapper--navigation {
+			height: 60px;
+		}
+		// .navigation_top_logo {
+		// 	height: 30px;
+		// }
+	}
+	// &.hidden {top: -200px;}
+	//after scrolling down desktop menu settings ## END
+
+} //media
+
+} //#menu
