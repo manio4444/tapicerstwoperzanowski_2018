@@ -3,7 +3,7 @@
 	position: fixed; //to be on top
 	background-color: $white;
 	width: 100%;
-	.section_wrapper--navigation {
+	.section__wrapper--navigation {
 		display:  flex;
 		justify-content: space-between;
 		align-items: center;
@@ -83,7 +83,7 @@
 	// .navigation_top_logo img {transition: all .24s ease;}
 	&.scrolled {
 		box-shadow: 0 0 5px rgba(0,0,0,.5);
-		.section_wrapper--navigation {
+		.section__wrapper--navigation {
 			height: 60px;
 		}
 		// .navigation_top_logo {
