@@ -63,6 +63,21 @@
 @media (min-width: 1024px) {
 	.hamburger {display: none;}
 
+	.navigation_logo {
+		font-family: $font_secondary;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo_txt--big {
+		font-size: 2em;
+	}
+
+	.logo_txt--small {
+		font-size: 1.3em;
+	}
+
 	.navigation_list {
 		text-transform: uppercase;
 		font-size: 13px;

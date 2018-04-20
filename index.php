@@ -59,5 +59,6 @@
   </body>
   <script src="dist/scripts.all.min"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
 
 </html>
