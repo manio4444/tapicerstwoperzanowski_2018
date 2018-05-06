@@ -1,3 +1,6 @@
+<?php
+include('lang.php');
+?>
 <!DOCTYPE html>
 <html lang="pl">
   <head>
@@ -50,15 +53,25 @@
       <section class="page__section section_contact" id="section_contact">
         <div class="section__wrapper">
 
+          <div id="google_map"></div>
+
         </div>
       </section>
+
+      <footer>
+        <div class="section__wrapper">
+
+        </div>
+      </footer>
 
     </main>
 
 
   </body>
-  <script src="dist/scripts.all.min"></script>
+  <script src="dist/scripts.all.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBweORh04qPGsjpO-ib0tVSgxlayRjUoM&callback=initMap"></script>
+
 
 </html>
