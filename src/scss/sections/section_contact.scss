@@ -1,0 +1,18 @@
+.section_contact {
+
+
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+	#google_map{
+		height: 300px;
+	}
+} //media
+@media (min-width: 1024px) {
+	#google_map{
+		height: 650px;
+	}
+} //media
+} //.section_contact

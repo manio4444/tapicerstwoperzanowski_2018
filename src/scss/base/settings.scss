@@ -17,11 +17,7 @@ body {
   justify-content: space-between;
   .page__section:first-child {
     flex-grow: 1;
-  }
-  &::before {
-    content: '';
-    height: $menu_height;
-    display: block;
+    padding-top: $menu_height;
   }
 }
 
@@ -36,13 +32,12 @@ body {
 
 // ################ OTHER SETTINGS ###########
 p {
-  line-height: 22px;
-  font-size: 14px;
+  line-height: 160%;
   margin-bottom: 10px;
 }
 strong { font-weight: 900; }
 
-@include selection($white, $orange);
+@include selection($selection_txt, $selection_bgn);
 
 //hover options not for touch devices - detecting by js: touchscreenDetect()
 body.noTouchscreen {

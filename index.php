@@ -1,5 +1,6 @@
 <?php
 include('lang.php');
+file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
 ?>
 <!DOCTYPE html>
 <html lang="pl">
@@ -33,14 +34,16 @@ include('lang.php');
     <main class="page__container">
 
       <section class="page__section section_home" id="section_home">
+        <div class="section__background">
         <div class="section__wrapper">
 
         </div>
+      </div>
       </section>
 
       <section class="page__section section_about" id="section_about">
         <div class="section__wrapper">
-          Jesteśmy na rynku od 20 lat. Nasze doświadczenie pozwoli o nam na tworzenie nietypowych mebli tapicerowanych na  yczenie klienta. Zajmujeny sie renowacj  mebli tapicerskich, odnawiamy i zmieniamy obicia mebli codziennego u ytku, wykonujemy meble tapicerowane na zam wienie,  awki do si owni, meble do salon w fryzjerskich i restauracji, zajmujemy sie tapicerk  samochodow , obijaniem drzwi.
+          <p>Jesteśmy na rynku od 20 lat. Nasze doświadczenie pozwoli o nam na tworzenie nietypowych mebli tapicerowanych na  yczenie klienta. Zajmujeny sie renowacj  mebli tapicerskich, odnawiamy i zmieniamy obicia mebli codziennego u ytku, wykonujemy meble tapicerowane na zam wienie,  awki do si owni, meble do salon w fryzjerskich i restauracji, zajmujemy sie tapicerką samochodów, obijaniem drzwi.</p>
         </div>
       </section>
 
@@ -53,13 +56,21 @@ include('lang.php');
       <section class="page__section section_contact" id="section_contact">
         <div class="section__wrapper">
 
-          <div id="google_map"></div>
-
         </div>
+        <div id="google_map"></div>
       </section>
 
-      <footer>
+      <footer class="page__section section_footer">
         <div class="section__wrapper">
+
+          <p>
+            <span>Copyright &copy; 2018 Zakład Tapicerski Arkadiusz Perzanowski</span>
+          </p>
+
+          <p>
+            <span>Wszelkie prawa zastrzeżone.</span>
+            <span>Realizacja: Studio Citrus - studiocitrus.pl</span>
+          </p>
 
         </div>
       </footer>
@@ -68,10 +79,11 @@ include('lang.php');
 
 
   </body>
+  <script src="lang_export.js"></script>
   <script src="dist/scripts.all.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBweORh04qPGsjpO-ib0tVSgxlayRjUoM&callback=initMap"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBweORh04qPGsjpO-ib0tVSgxlayRjUoM"></script>
 
 
 </html>

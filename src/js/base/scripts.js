@@ -117,7 +117,7 @@ var styles=[{featureType:"administrative",elementType:"geometry",stylers:[{color
 
   // if (document.body.offsetWidth>=1024) var zoomVar = 15;
   // else var zoomVar = 3;
-  var zoomVar = 15
+  var zoomVar = Number(lang['contact_map_zoom']);
   var optionsMap = {
     center: coordinates,
     zoom: zoomVar,
@@ -142,7 +142,7 @@ var styles=[{featureType:"administrative",elementType:"geometry",stylers:[{color
   var marker1 = new google.maps.Marker({
     position: marker1_pos,
     map: map,
-    icon: pinImage
+    // icon: pinImage
   });
   // var marker2 = new google.maps.Marker({
   //   position: marker2_pos,
@@ -156,3 +156,14 @@ var styles=[{featureType:"administrative",elementType:"geometry",stylers:[{color
   //   window.open(lang['contact_gmaps_url2'], '_blank');
   // });
 } //end function
+
+
+// ################ SMOOTH_LINK_SCROLL #########
+$('a[href*="#"]').click(function(event) {
+  var selected = '#'+$(this).attr('href').split('#')[1];
+    if ($(selected).length) {
+        event.preventDefault();
+        distance = $(selected).offset().top;
+        $('html, body').animate({scrollTop: distance}, 750);
+    }
+});

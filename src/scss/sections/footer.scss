@@ -1,14 +1,10 @@
 .section_footer {
+	text-align: center;
+	font-size: 0.75em;
 	.section__wrapper {
 	}
 @media (max-width: 1023px) {
-	#google_map{
-		height: 300px;
-	}
 } //media
 @media (min-width: 1024px) {
-	#google_map{
-		height: 600px;
-	}
 } //media
 } //.section_footer

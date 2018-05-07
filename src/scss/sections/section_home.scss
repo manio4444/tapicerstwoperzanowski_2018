@@ -1,9 +1,11 @@
 .section_home {
 
-min-height: 100vh;
-  background-image: url('../img/section_home.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
+  .section__background {
+    min-height: 100vh;
+    background-image: url('../img/section_home.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   // .section_home_desc {
   //   line-height: 2em;

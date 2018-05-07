@@ -14,6 +14,7 @@ $(document).ready(function(){
 	// 	// disable: window.innerWidth <= 768,
 	// });
 	// testimonialsSliderInit();
+  initMap();
 
 
 });
