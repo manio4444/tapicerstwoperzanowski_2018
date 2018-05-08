@@ -5,8 +5,8 @@ $(document).ready(function(){
 	deleteBeforeLoad();
   section_gallery_slider();
 	//
-	// var menuMobile = menuMobileObject();
-	// menuMobile.init();
+	var menuMobile = menuMobileObject();
+	menuMobile.init();
 	//
 	// var menuDesktop = menuDesktopObject();
 	// menuDesktop.init();

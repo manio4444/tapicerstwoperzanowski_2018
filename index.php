@@ -28,6 +28,9 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
             <li class="navigation_list_el"><a href="#section_contact">Kontakt</a></li>
           </ul>
         </nav>
+        <button class="hamburger hamburger--squeeze" type="button">
+          <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+        </button>
       </div>
     </header>
 

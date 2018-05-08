@@ -45,7 +45,11 @@ function menuMobileObject() {
       m_menu_cont.classList.toggle('show');
     },
     init: function() {
-      if (m_menu_hamb && m_menu_cont) {
+      if (!m_menu_hamb) {
+        console.error('function menuMobileObject() No m_menu_hamb variable found');
+      } else if (!m_menu_cont) {
+        console.error('function menuMobileObject() No m_menu_cont variable found');
+      } else {
         m_menu_hamb.addEventListener('click', this.toggle, false);
       }
       m_menu_list.on('click', this.toggle);
