@@ -1,8 +1,17 @@
 .page__section {
 }
 
-.page__section .section__wrapper {
-	padding: 50px 0;
+.page__section {
+	.section__wrapper {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+	&__title {
+		font-size: 36px;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+		color: $white;
+	}
 }
 
 #backtotop {
@@ -59,7 +68,7 @@
 		// &:hover {opacity: 1;}
 		&::after {
 			font-family: $awesome;
-			font-size: 40px;
+			font-size: 50px;
 		}
 	}
 	.slick-prev::after {content: '\f104';}
@@ -69,7 +78,6 @@
 	.slick-next {right: 5px;}
 
 @media (max-width: 767px) {
-
 } //media
 @media (max-width: 1023px) {} //media
 @media (min-width: 1024px) {} //media

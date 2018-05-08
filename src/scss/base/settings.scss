@@ -42,14 +42,20 @@ strong { font-weight: 900; }
 //hover options not for touch devices - detecting by js: touchscreenDetect()
 body.noTouchscreen {
 	button, a {
-		transition: color .3s ease,
-		background-color .3s ease,
-		border-color .3s ease,
-		opacity .3s ease;
+		transition: color .3s ease-in-out,
+		background-color .3s ease-in-out,
+		border-color .3s ease-in-out,
+		opacity .3s ease-in-out;
 	}
-	button:hover, a:hover { opacity: 0.7; }
+	button:hover, a:hover {
+    opacity: 0.7;
+    transition: color .2s linear,
+    background-color .2s linear,
+    border-color .2s linear,
+    opacity .2s linear;
+  }
   a[href^="tel:"] {pointer-events: none;} //disables tel: protocol on most desktop devices
 }
 
 //class to show only first child of element, before scripts load
-.beforeLoad>*:not(:first-of-type) {display: none;}
+// .beforeLoad>*:not(:first-of-type) {display: none;}
