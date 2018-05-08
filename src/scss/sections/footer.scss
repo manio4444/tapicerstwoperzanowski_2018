@@ -1,7 +1,14 @@
 .section_footer {
 	text-align: center;
 	font-size: 0.75em;
+	background-color: $background2;
+	color: $white;
 	.section__wrapper {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+	p {
+		margin-bottom: 0;
 	}
 @media (max-width: 1023px) {
 } //media

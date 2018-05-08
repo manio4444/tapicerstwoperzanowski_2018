@@ -2,10 +2,10 @@
 }
 
 .page__section {
+	background-color: $background;
 	.section__wrapper {
 	}
 	&__title {
-		font-size: 36px;
 		text-transform: uppercase;
 		margin-bottom: 1em;
 		color: $white;
@@ -16,11 +16,17 @@
 			padding-top: 30px;
 			padding-bottom: 30px;
 		}
+		&__title {
+			font-size: 28px;
+		}
 	} //media
 	@media (min-width: 1024px) {
 		.section__wrapper {
 			padding-top: 50px;
 			padding-bottom: 50px;
+		}
+		&__title {
+			font-size: 36px;
 		}
 	} //media
 }

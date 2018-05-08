@@ -1,5 +1,6 @@
 <?php
 $lang = array(
+  'contact_mail'                  => 'tapicerstwoperzanowski1@wp.pl',
   'contact_map_latitude'          => '52.167489',
   'contact_map_longitude'         => '21.594325',
   'contact_map_zoom'              => '16',

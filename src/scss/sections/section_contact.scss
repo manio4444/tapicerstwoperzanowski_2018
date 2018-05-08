@@ -1,6 +1,12 @@
 .section_contact {
 
-
+	text-align: center;
+	.fa {
+		color: $yellow;
+		vertical-align: middle;
+		margin-right: 8px;
+		line-height: 19px;
+	}
 @media (max-width: 767px) {
 } //media
 @media (min-width: 768px) {
