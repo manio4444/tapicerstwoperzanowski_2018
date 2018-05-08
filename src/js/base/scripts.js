@@ -110,7 +110,7 @@ function testimonialsSliderInit() {
 // ################ GOOGLE MAPS #########
 function initMap() {
 
-var styles=[{featureType:"administrative",elementType:"geometry",stylers:[{color:"#a7a7a7"}]},{featureType:"administrative",elementType:"labels.text.fill",stylers:[{visibility:"on"},{color:"#737373"}]},{featureType:"landscape",elementType:"geometry.fill",stylers:[{visibility:"on"},{color:"#f1f1f1"}]},{featureType:"poi",elementType:"geometry.fill",stylers:[{visibility:"on"},{color:"#dadada"}]},{featureType:"poi",elementType:"labels",stylers:[{visibility:"off"}]},{featureType:"poi",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"labels.text.fill",stylers:[{color:"#696969"}]},{featureType:"road",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road.highway",elementType:"geometry.fill",stylers:[{color:"#d2d2d2"},{visibility:"on"}]},{featureType:"road.highway",elementType:"geometry.stroke",stylers:[{visibility:"on"},{color:"#cdcdcd"}]},{featureType:"road.arterial",elementType:"geometry.fill",stylers:[{color:"#ffffff"}]},{featureType:"road.arterial",elementType:"geometry.stroke",stylers:[{color:"#d6d6d6"}]},{featureType:"road.local",elementType:"geometry.fill",stylers:[{visibility:"on"},{color:"#ffffff"},{weight:1.8}]},{featureType:"road.local",elementType:"geometry.stroke",stylers:[{color:"#d7d7d7"},{visibility:"on"}]},{featureType:"transit",elementType:"all",stylers:[{color:"#808080"},{visibility:"off"}]},{featureType:"water",elementType:"geometry.fill",stylers:[{color:"#c4c4c4"}]},{featureType:"water",elementType:"labels",stylers:[{visibility:"off"}]}];
+var styles=[{"featureType": "administrative","elementType": "all","stylers": [{"saturation": "-100"}]},{"featureType": "administrative.province","elementType": "all","stylers": [{"visibility": "off"}]},{"featureType": "landscape","elementType": "all","stylers": [{"saturation": -100},{"lightness": 65},{"visibility": "on"}]},{"featureType": "poi","elementType": "all","stylers": [{"saturation": -100},{"lightness": "70"},{"visibility": "simplified"}]},{"featureType": "road","elementType": "all","stylers": [{"saturation": "-100"}]},{"featureType": "road.highway","elementType": "all","stylers": [{"visibility": "simplified"}]},{"featureType": "road.arterial","elementType": "all","stylers": [{"lightness": "30"}]},{"featureType": "road.local","elementType": "all","stylers": [{"lightness": "40"}]},{"featureType": "transit","elementType": "all","stylers": [{"saturation": -100},{"visibility": "simplified"}]},{"featureType": "water","elementType": "geometry","stylers": [{"hue": "#ffff00"},{"lightness": -25},{"saturation": -97}]},{"featureType": "water","elementType": "labels","stylers": [{"lightness": -25},{"saturation": -100}]}];
   var coordinates = new google.maps.LatLng(lang['contact_map_latitude'], lang['contact_map_longitude']);
   var marker1_pos = new google.maps.LatLng(lang['contact_latitude_marker1'], lang['contact_longitude_marker1']);
   // var marker2_pos = new google.maps.LatLng(lang['contact_latitude_marker2'], lang['contact_longitude_marker2']);
@@ -126,7 +126,7 @@ var styles=[{featureType:"administrative",elementType:"geometry",stylers:[{color
     disableDefaultUI: true,
     // zoomControl: false,
     // scaleControl: false,
-    // scrollwheel: false,
+    scrollwheel: false,
     // disableDoubleClickZoom: true,
     // draggable: false,
   };
@@ -161,9 +161,36 @@ var styles=[{featureType:"administrative",elementType:"geometry",stylers:[{color
 // ################ SMOOTH_LINK_SCROLL #########
 $('a[href*="#"]').click(function(event) {
   var selected = '#'+$(this).attr('href').split('#')[1];
+  var dataMenuHeight = $('[data-menu-height]').height();
     if ($(selected).length) {
         event.preventDefault();
         distance = $(selected).offset().top;
-        $('html, body').animate({scrollTop: distance}, 750);
+        $('html, body').animate({scrollTop: distance - dataMenuHeight}, 750);
     }
 });
+
+
+// ################ LOOKBOOK_PAGE_SLIDER ###########
+function section_gallery_slider() {
+  $('.section_gallery .slider').slick({
+    centerMode: true,
+    variableWidth:true,
+    // centerPadding: 0,
+    // slidesToShow: 3,
+    // dots: true,
+    prevArrow: '<span class="slick-prev">Previous</span>',
+    nextArrow: '<span class="slick-next">Next</span>',
+    focusOnSelect: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 1720,
+    //     settings: {
+    //       centerMode: true,
+    //       variableWidth:true,
+    //       arrows: false,
+    //       dots: true,
+    //     }throwpage
+    //   }
+    // ]
+  });
+}

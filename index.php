@@ -15,7 +15,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
   <body>
 
     <header class="navigation">
-      <div class="section__wrapper section__wrapper--navigation">
+      <div class="section__wrapper section__wrapper--navigation" data-menu-height>
         <h1 class="navigation_logo">
           <span class="logo_txt--big">Zakład Tapicerski</span>
           <span class="logo_txt--small">Arkadiusz Perzanowski</span>
@@ -35,21 +35,35 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
 
       <section class="page__section section_home" id="section_home">
         <div class="section__background">
-        <div class="section__wrapper">
-
+        <div class="section__wrapper title">
+          <span class="title__pre">Ponad</span>
+          <span class="title__big">20 lat doświadczenia</span>
+          <a class="title__anchor" href="#section_about">Dowiedz się więcej</a>
         </div>
       </div>
       </section>
 
       <section class="page__section section_about" id="section_about">
         <div class="section__wrapper">
+          <h2 class="page__section__title">O nas</h2>
           <p>Jesteśmy na rynku od 20 lat. Nasze doświadczenie pozwoli o nam na tworzenie nietypowych mebli tapicerowanych na  yczenie klienta. Zajmujeny sie renowacj  mebli tapicerskich, odnawiamy i zmieniamy obicia mebli codziennego u ytku, wykonujemy meble tapicerowane na zam wienie,  awki do si owni, meble do salon w fryzjerskich i restauracji, zajmujemy sie tapicerką samochodów, obijaniem drzwi.</p>
         </div>
       </section>
 
       <section class="page__section section_gallery" id="section_gallery">
         <div class="section__wrapper">
+          <h2 class="page__section__title">Galeria prac</h2>
+        </div>
 
+        <div class="slider beforeLoad">
+          <?php
+          $folderGallery = 'section_gallery';
+          foreach (array_diff(scandir($folderGallery), array('..', '.')) as $galeria) {
+            echo "<li class='slider__element'>";
+            echo "<img src='$folderGallery/$galeria'>"; //wyswietla nazwe folderu z linkiem
+            echo "</li>";
+          }
+          ?>
         </div>
       </section>
 
@@ -83,7 +97,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
   <script src="dist/scripts.all.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster&amp;subset=latin-ext" rel="stylesheet">
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBweORh04qPGsjpO-ib0tVSgxlayRjUoM"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?query=spacerowa+25+minsk+mazowiecki&key=AIzaSyBBweORh04qPGsjpO-ib0tVSgxlayRjUoM"></script>
 
 
 </html>

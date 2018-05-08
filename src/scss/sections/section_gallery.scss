@@ -1,0 +1,39 @@
+.section_gallery {
+
+  .section__wrapper {
+    padding-bottom: 0;
+  }
+  .slider {
+    display: flex;
+    img {
+      height: 100%;
+    }
+    &__element {
+      list-style: none;
+    }
+    .slick-arrow {
+      color: $white;
+    }
+    &.beforeLoad {
+      overflow: hidden;
+    }
+  }
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+  .slider {
+    &__element {
+      height: 250px;
+    }
+  }
+} //media
+@media (min-width: 1024px) {
+  .slider {
+    &__element {
+      height: 390px;
+    }
+  }
+} //media
+} //.section_gallery

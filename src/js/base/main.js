@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
-	// touchscreenDetect();
+	touchscreenDetect();
 	// backToTopInit();
-	// deleteBeforeLoad();
+	deleteBeforeLoad();
+  section_gallery_slider();
 	//
 	// var menuMobile = menuMobileObject();
 	// menuMobile.init();
@@ -15,6 +16,7 @@ $(document).ready(function(){
 	// });
 	// testimonialsSliderInit();
   initMap();
+
 
 
 });
