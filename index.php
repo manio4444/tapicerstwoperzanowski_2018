@@ -45,8 +45,17 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
 
       <section class="page__section section_about" id="section_about">
         <div class="section__wrapper">
-          <h2 class="page__section__title">O nas</h2>
-          <p>Jesteśmy na rynku od 20 lat. Nasze doświadczenie pozwoli o nam na tworzenie nietypowych mebli tapicerowanych na  yczenie klienta. Zajmujeny sie renowacj  mebli tapicerskich, odnawiamy i zmieniamy obicia mebli codziennego u ytku, wykonujemy meble tapicerowane na zam wienie,  awki do si owni, meble do salon w fryzjerskich i restauracji, zajmujemy sie tapicerką samochodów, obijaniem drzwi.</p>
+
+          <div class="text">
+            <h2 class="page__section__title">O nas</h2>
+            <p>Jesteśmy na rynku od 20 lat. Nasze doświadczenie pozwoli o nam na tworzenie nietypowych mebli tapicerowanych na  yczenie klienta. Zajmujeny sie renowacj  mebli tapicerskich, odnawiamy i zmieniamy obicia mebli codziennego u ytku, wykonujemy meble tapicerowane na zam wienie,  awki do si owni, meble do salon w fryzjerskich i restauracji, zajmujemy sie tapicerką samochodów, obijaniem drzwi.</p>
+          </div>
+
+
+        </div>
+        <div class="image">
+          <div class="image__img"></div>
+          <!-- <img class="image__img" src="img/section_about.jpg" alt=""> -->
         </div>
       </section>
 

@@ -19,6 +19,7 @@
   .title {
     color: $white;
     text-align: center;
+    font-weight: normal;
     &__pre {
       display: block;
       color: $yellow;
@@ -29,11 +30,11 @@
       display: block;
       text-transform: uppercase;
       margin-bottom: 2em;
+      font-weight: 500;
     }
     &__anchor {
       border: 2px $yellow solid;
       padding: 10px 25px;
-      font-weight: 300;
     }
   }
 
