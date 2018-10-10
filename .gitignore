@@ -3,3 +3,4 @@ dist/scripts.all.min.js
 dist/styles.all.min.css
 zdjecia
 lang_export.js
+deployment-config.json

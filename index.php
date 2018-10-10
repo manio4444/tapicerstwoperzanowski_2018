@@ -92,7 +92,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
 </a></p>
           <p><span class="fa fa-phone"></span><a href="tel:+48257585114">+48 25-758-51-14</a></p>
           <p><span class="fa fa-phone"></span><a href="tel:+48606387705">+48 606-387-705</a></p>
-          <p><span class="fa fa-envelope"></span><span><a href="mail:<?php echo $lang['contact_mail'] ?>"><?php echo $lang['contact_mail'] ?></a></span></p>
+          <p><span class="fa fa-envelope"></span><span><a href="mailto:<?php echo $lang['contact_mail'] ?>"><?php echo $lang['contact_mail'] ?></a></span></p>
         </div>
       </section>
 
