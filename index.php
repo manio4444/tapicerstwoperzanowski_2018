@@ -51,7 +51,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
 
           <div class="text">
             <h2 class="page__section__title">O nas</h2>
-            <p>Jesteśmy na rynku od 20 lat. Nasze doświadczenie pozwoli o nam na tworzenie nietypowych mebli tapicerowanych na  yczenie klienta. Zajmujeny sie renowacj  mebli tapicerskich, odnawiamy i zmieniamy obicia mebli codziennego u ytku, wykonujemy meble tapicerowane na zam wienie,  awki do si owni, meble do salon w fryzjerskich i restauracji, zajmujemy sie tapicerką samochodów, obijaniem drzwi.</p>
+            <p>Jesteśmy na rynku od ponad 25 lat. Nasze doświadczenie pozwoliło nam na tworzenie nietypowych mebli tapicerowanych na życzenie klienta. Zajmujemy się renowacją mebli tapicerskich, odnawiamy i zmieniamy obicia mebli codziennego użytku, wykonujemy meble tapicerowane na zamówienie, ławki do siłowni, meble do salonów fryzjerskich i restauracji, zajmujemy się tapicerką samochodów, obijaniem drzwi.</p>
           </div>
 
 
@@ -88,7 +88,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
           <h2 class="page__section__title">Kontakt i dojazd</h2>
           <p>Zapraszamy do kontaktu:</p>
           <p><span>Arkadiusz Perzanowski</span><br><span>Zakład Tapicerski</span></p>
-          <p><span class="fa fa-map-marker"></span><a href="<?php echo $lang['contact_gmaps_url1']; ?>" target="_blank">05-300 Targówka,ul. Spacerowa 25 <br>(obok miejscowości Mińsk Mazowiecki)
+          <p><span class="fa fa-map-marker"></span><a href="<?php echo $lang['contact_gmaps_url1']; ?>" target="_blank">05-300 Targówka, ul. Spacerowa 25 <br>(obok miejscowości Mińsk Mazowiecki)
 </a></p>
           <p><span class="fa fa-phone"></span><a href="tel:+48257585114">+48 25-758-51-14</a></p>
           <p><span class="fa fa-phone"></span><a href="tel:+48606387705">+48 606-387-705</a></p>
