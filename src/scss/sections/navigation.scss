@@ -2,6 +2,7 @@
 	z-index: 3;
 	position: fixed; //to be on top
 	background-color: $white;
+	color: $menu_color;
 	width: 100%;
 	.section__wrapper--navigation {
 		display:  flex;
@@ -79,7 +80,7 @@
 } //media
 @media (min-width: 1024px) {
 	box-shadow: 0 0 5px rgba(0,0,0,.5);
-	
+
 	.hamburger {display: none;}
 
 	.navigation_logo {

@@ -10,13 +10,14 @@ $padding: 10px;
 
 $white: #FFFFFF;
 
-$color1: #818181;
+$color1: #9b9b9b;
 $yellow: #efaa15;
 
 $background: #49433c;
 $background2: #3a3630; //darker
 
 $menu_height: 89px;
+$menu_color: darken( $color1, 10% );
 
 $background_page: $background;
 
