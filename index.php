@@ -25,6 +25,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
             <li class="navigation_list_el"><a href="#section_home">Home</a></li>
             <li class="navigation_list_el"><a href="#section_about">O nas</a></li>
             <li class="navigation_list_el"><a href="#section_gallery">Galeria prac</a></li>
+            <li class="navigation_list_el"><a href="#section_offer">Oferta</a></li>
             <li class="navigation_list_el"><a href="#section_contact">Kontakt</a></li>
           </ul>
         </nav>
@@ -80,6 +81,29 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
         <div class="section__wrapper"></div>
       </section>
 
+      <section class="page__section section_offer" id="section_offer">
+        <div class="section__wrapper">
+          <h2 class="page__section__title">Oferta</h2>
+          <p>W naszej ofercie usługowej znadują się między innymi:</p>
+          <ul class="section_offer__list list--dotted">
+            <li>Renowacja mebli tapicerskich
+              <ul>
+                <li>Zmiany obicia mebli codziennego użytku</li>
+                <li>Naprawa tapicerki samochodowej</li>
+                <li>Odrestaurowywanie mebli stylowych i antyków</li>
+              </ul>
+            </li>
+
+            <li>Wykonujemy meble tapierskie na zamówienie
+              <ul>
+                <li>Świadczymy uzługi dla restauracji, salonów fryzjerskich i siłowni</li>
+                <li>Realizujemy zamówienia tapicerskie projektantów wnętrz</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <?php $lang['contact_mail'] = str_replace("@","&#64;",$lang['contact_mail']); //secure mail ?>
 
       <section class="page__section section_contact" id="section_contact">
@@ -88,8 +112,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
           <h2 class="page__section__title">Kontakt i dojazd</h2>
           <p>Zapraszamy do kontaktu:</p>
           <p><span>Arkadiusz Perzanowski</span><br><span>Zakład Tapicerski</span></p>
-          <p><span class="fa fa-map-marker"></span><a href="<?php echo $lang['contact_gmaps_url1']; ?>" target="_blank">05-300 Targówka, ul. Spacerowa 25 <br>(obok miejscowości Mińsk Mazowiecki)
-</a></p>
+          <p><span class="fa fa-map-marker"></span><a href="<?php echo $lang['contact_gmaps_url1']; ?>" target="_blank">05-300 Targówka, ul. Spacerowa 25 <br>(obok miejscowości Mińsk Mazowiecki)</a></p>
           <p><span class="fa fa-phone"></span><a href="tel:+48257585114">+48 25-758-51-14</a></p>
           <p><span class="fa fa-phone"></span><a href="tel:+48606387705">+48 606-387-705</a></p>
           <p><span class="fa fa-envelope"></span><span><a href="mailto:<?php echo $lang['contact_mail'] ?>"><?php echo $lang['contact_mail'] ?></a></span></p>
