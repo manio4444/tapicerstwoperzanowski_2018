@@ -53,7 +53,9 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
 
           <div class="text">
             <h2 class="page__section__title">O nas</h2>
-            <p>Jesteśmy na rynku od ponad 25 lat. Nasze doświadczenie pozwoliło nam na tworzenie nietypowych mebli tapicerowanych na życzenie klienta. Zajmujemy się renowacją mebli tapicerskich, odnawiamy i zmieniamy obicia mebli codziennego użytku, wykonujemy meble tapicerowane na zamówienie, ławki do siłowni, meble do salonów fryzjerskich i restauracji, zajmujemy się tapicerką samochodów, obijaniem drzwi.</p>
+            <p>Już od 26 lat profesjonalnie zajmujemy się renowacją mebli tapicerskich. Dbamy o zadowolenie naszych niezwykle wymagających klientów. Nie ma przed nami wyzwań, którymi nie podołamy.</p>
+            <p>Naszymi najważniejszymi wartościami są jakość. terminowość i profesjonalizm.</p>
+            <p>Nasze doświadczenie pozwala nam na tworzenie typowych i nietypowych mebli dla stałych i nowych klientów.</p>
           </div>
 
 
