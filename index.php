@@ -85,7 +85,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
       <section class="page__section section_offer" id="section_offer">
         <div class="section__wrapper">
           <h2 class="page__section__title">Oferta</h2>
-          <p>W naszej ofercie usługowej znadują się między innymi:</p>
+          <h3 class="page__section__title--sub">W naszej ofercie usługowej znadują się między innymi:</h3>
           <ul class="section_offer__list list--dotted">
             <li>Renowacja mebli tapicerskich
               <ul>
