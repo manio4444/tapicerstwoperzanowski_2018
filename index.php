@@ -42,6 +42,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
         <div class="section__wrapper title">
           <span class="title__pre">Ponad</span>
           <span class="title__big">20 lat doświadczenia</span>
+          <span class="title__after">Rodzinna firma z pasją do nadawania drugiego życia przedmiotom codziennego użytku</span>
           <a class="title__anchor" href="#section_about">Dowiedz się więcej</a>
         </div>
       </div>
