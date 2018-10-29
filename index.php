@@ -41,7 +41,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
         <div class="section__background">
         <div class="section__wrapper title">
           <span class="title__pre">Ponad</span>
-          <span class="title__big">20 lat doświadczenia</span>
+          <span class="title__big">26 lat doświadczenia</span>
           <span class="title__after">Rodzinna firma z pasją do nadawania drugiego życia przedmiotom codziennego użytku</span>
           <a class="title__anchor" href="#section_about">Dowiedz się więcej</a>
         </div>
@@ -54,7 +54,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
           <div class="text">
             <h2 class="page__section__title">O nas</h2>
             <p>Już od 26 lat profesjonalnie zajmujemy się renowacją mebli tapicerskich. Dbamy o zadowolenie naszych niezwykle wymagających klientów. Nie ma przed nami wyzwań, którymi nie podołamy.</p>
-            <p>Naszymi najważniejszymi wartościami są jakość. terminowość i profesjonalizm.</p>
+            <p>Naszymi najważniejszymi wartościami są jakość, terminowość i profesjonalizm.</p>
             <p>Nasze doświadczenie pozwala nam na tworzenie typowych i nietypowych mebli dla stałych i nowych klientów.</p>
           </div>
 
@@ -113,7 +113,7 @@ file_put_contents('lang_export.js', 'var lang = '.json_encode($lang).';');
         <div id="google_map"></div>
         <div class="section__wrapper">
           <h2 class="page__section__title">Kontakt i dojazd</h2>
-          <p>Zapraszamy do kontaktu:</p>
+          <h3 class="page__section__title--sub">Zapraszamy do kontaktu:</h3>
           <p><span>Arkadiusz Perzanowski</span><br><span>Zakład Tapicerski</span></p>
           <p><span class="fa fa-map-marker"></span><a href="<?php echo $lang['contact_gmaps_url1']; ?>" target="_blank">05-300 Targówka, ul. Spacerowa 25 <br>(obok miejscowości Mińsk Mazowiecki)</a></p>
           <p><span class="fa fa-phone"></span><a href="tel:+48257585114">+48 25-758-51-14</a></p>
