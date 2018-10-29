@@ -136,17 +136,17 @@ var styles=[{"featureType": "administrative","elementType": "all","stylers": [{"
   };
 
   var pinImage = new google.maps.MarkerImage(
-    'templates/default/img/marker.png',
-    new google.maps.Size(89, 96), //size of marker in px, optional, for cropping.
+    'img/map-marker.png',
+    new google.maps.Size(193, 52), //size of marker in px, optional, for cropping.
     new google.maps.Point(0,0), //size of marker in px, optional, for cropping.
-    new google.maps.Point(44, 96) //pointing place (anchor?) by marker in px position.
+    new google.maps.Point(20, 51) //pointing place (anchor?) by marker in px position.
   );
 
   var map = new google.maps.Map(document.getElementById("google_map"), optionsMap);
   var marker1 = new google.maps.Marker({
     position: marker1_pos,
     map: map,
-    // icon: pinImage
+    icon: pinImage
   });
   // var marker2 = new google.maps.Marker({
   //   position: marker2_pos,
@@ -174,7 +174,7 @@ $('a[href*="#"]').click(function(event) {
 });
 
 
-// ################ LOOKBOOK_PAGE_SLIDER ###########
+// ################ SECTION_GALLERY_SLIDER ###########
 function section_gallery_slider() {
   $('.section_gallery .slider').slick({
     centerMode: true,
